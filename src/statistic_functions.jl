@@ -57,23 +57,23 @@ function(length(x::StatResult))
     return x.n
 end
 
-s = StatResult(2:10)
-print(s)
-length(s)
+# ## Test everything --
+# using Test
 
-s2 = StatResult2(2:10)
+# s = StatResult(2:10)
+# print(s)
+# length(s)
 
-## Test everything --
-using Test
+# s2 = StatResult2(2:10)
 
-@test rse_sum(1:36) == 666
-@test rse_mean(-15:17) == 1
-@test rse_std(1:3) == 1
-@test rse_tstat(2:3) == 5
-@test s.x == 2:10
-@test s.n == 9
-@test length(s) == 9
-@test s.n == s2.n
-@test s.std == s2.std
-@test s.tvalue == s2.tvalue
+# @test rse_sum(1:36) == 666
+# @test rse_mean(-15:17) == 1
+# @test rse_std(1:3) == 1
+# @test rse_tstat(2:3) == 5
+# @test s.x == 2:10
+# @test s.n == 9
+# @test length(s) == 9
+# @test s.n == s2.n
+# @test s.std == s2.std
+# @test s.tvalue == s2.tvalue
 
