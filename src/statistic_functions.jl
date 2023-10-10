@@ -1,4 +1,4 @@
-function printOwner
+function printOwner()
     print("@debruine")
 end
 
