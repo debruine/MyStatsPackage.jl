@@ -12,4 +12,8 @@ end
     @test s.x == 2:10
     @test s.n == 9
     @test length(s) == 9
+    @test rse_std(2:10) == s.std
+    @test rse_tstat(2:10) == s.tvalue
+    @test s.std ≈ 2.7386127875258306 atol = 0.00001
+    @test s.tvalue ≈ 6.572670690061993 atol = 0.00001
 end
