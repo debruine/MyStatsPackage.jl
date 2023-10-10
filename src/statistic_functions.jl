@@ -1,3 +1,7 @@
+function printOwner
+    print("@debruine")
+end
+
 function rse_sum(x) 
     mysum = 0
     for sub in x
